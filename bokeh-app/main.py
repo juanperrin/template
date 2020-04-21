@@ -10,7 +10,7 @@ x = [1, 2, 3, 4]
 y = [1, 2, 3, 4]
 source = ColumnDataSource(data={'x': x, 'y': y})
 
-data = pd.read_excel(join(dirname(__file__), 'data/feuille de saisie METEO mois par mois.xls'), None, header = (0,1)) # header dans les deux premières lignes de chaque onglet
+#data = pd.read_excel(join(dirname(__file__), 'data/feuille de saisie METEO mois par mois.xls'), None, header = (0,1)) # header dans les deux premières lignes de chaque onglet
 
 plot = figure(plot_width = 800, plot_height=300, x_axis_type='datetime')
     
