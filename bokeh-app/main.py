@@ -1,14 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Apr  7 06:19:49 2020
-
-@author: perrin27
-"""
-
 import pandas as pd
-
-#from datetime import date
-
 from os.path import dirname, join
 
 from bokeh.io import curdoc
@@ -35,11 +25,5 @@ plot.background_fill_alpha = 0.5
 plot.xaxis.formatter = DatetimeTickFormatter(months = ['%b %Y'])
 plot.xaxis.visible = False
 plot.grid.grid_line_alpha = 0.5
-
-    
-
-
-
 curdoc().add_root(plot)
 curdoc().title = "Météo Bouchaux"
-show(plot)
