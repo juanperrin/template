@@ -10,7 +10,8 @@ x = [1, 2, 3, 4]
 y = [1, 2, 3, 4]
 source = ColumnDataSource(data={'x': x, 'y': y})
 
-data = pd.read_excel(join(dirname(__file__), 'data/feuille de saisie METEO mois par mois.xlsx'), None, header = (0,1))
+#data = pd.read_excel(join(dirname(__file__), 'data/feuille de saisie METEO mois par mois.xlsx'), None, header = (0,1))
+data = pd.read_csv(join(dirname(__file__), 'data/feuille de saisie METEO mois par mois.csv'), None, header = (0,1))
 
 plot = figure(plot_width = 800, plot_height=300, x_axis_type='datetime')
 glyph = VBar(x='x', bottom=0, top='y', width=1 ,line_alpha=0.1, fill_color="#6599ed")
